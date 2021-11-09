@@ -8,10 +8,10 @@
 		<version>2.2.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.devtalkers</groupId>
-	<artifactId>restapitest</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>restapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>restapitest</name>
+	<name>restapi</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
