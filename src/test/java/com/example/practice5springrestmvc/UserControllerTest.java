@@ -2,6 +2,7 @@ package com.example.practice5springrestmvc;
 
 import com.example.practice5springrestmvc.controllers.UserController;
 import com.example.practice5springrestmvc.entity.User;
+import com.example.practice5springrestmvc.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
