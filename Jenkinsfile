@@ -46,18 +46,6 @@ pipeline {
             }
         }
 
-        // stage('Quality Gate Check') {
-        //     steps {
-        //         script {
-        //             // Wait for SonarQube quality gate
-        //             def qualityGate = waitForQualityGate()
-        //             if (qualityGate.status != 'OK') {
-        //                 error "Quality Gate did not pass. Deployment aborted."
-        //             }
-        //         }
-        //     }
-        // }
-
         stage('Deploy to Tomcat') {
             steps {
                 script {
