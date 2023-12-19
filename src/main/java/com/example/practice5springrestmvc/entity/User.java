@@ -3,7 +3,6 @@ package com.example.practice5springrestmvc.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "\"user\"")
 public class User {
 
     @Id
