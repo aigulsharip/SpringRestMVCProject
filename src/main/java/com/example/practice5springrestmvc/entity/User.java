@@ -4,7 +4,6 @@ import javax.persistence.*;
 
 @Entity
 public class User {
-
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -16,6 +15,18 @@ public class User {
     private String gender;
 
     private String phone;
+
+    public User(Integer id, String name, String email, String gender, String phone) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
+        this.phone = phone;
+    }
+
+    public User() {
+
+    }
 
     public Integer getId() {
         return id;
