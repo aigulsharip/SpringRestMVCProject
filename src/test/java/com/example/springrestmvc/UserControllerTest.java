@@ -1,8 +1,8 @@
-package com.example.practice5springrestmvc;
+package com.example.springrestmvc;
 
-import com.example.practice5springrestmvc.controllers.UserController;
-import com.example.practice5springrestmvc.entity.User;
-import com.example.practice5springrestmvc.service.UserService;
+import com.example.springrestmvc.controllers.UserController;
+import com.example.springrestmvc.entity.User;
+import com.example.springrestmvc.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

@@ -1,4 +1,4 @@
-package com.example.practice5springrestmvc.entity;
+package com.example.springrestmvc.entity;
 
 import javax.persistence.*;
 

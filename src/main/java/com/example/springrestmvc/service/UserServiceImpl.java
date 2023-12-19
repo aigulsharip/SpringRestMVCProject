@@ -1,7 +1,7 @@
-package com.example.practice5springrestmvc.service;
+package com.example.springrestmvc.service;
 
-import com.example.practice5springrestmvc.entity.User;
-import com.example.practice5springrestmvc.repository.UserRepository;
+import com.example.springrestmvc.entity.User;
+import com.example.springrestmvc.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
