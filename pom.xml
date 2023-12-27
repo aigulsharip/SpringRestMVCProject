@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.devtalkers</groupId>
-	<artifactId>restapitest</artifactId>
+	<artifactId>SpringRestMVCProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>restapitest</name>
+	<name>SpringRestMVCProject</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
