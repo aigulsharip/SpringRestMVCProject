@@ -1,4 +1,4 @@
-package com.example.springrestmvc;
+package com.example.springrestmvc.controllers;
 
 import com.example.springrestmvc.controllers.UserController;
 import com.example.springrestmvc.entity.User;
@@ -26,7 +26,7 @@ public class UserControllerTest {
     private UserService userService;
 
     @Test
-    public void testGetAllUsers() {
+    void testGetAllUsers() {
         // Arrange
         List<User> mockUsers = Arrays.asList(
                 new User(1, "John", "john@example.com", "Male", "123456789"),
@@ -44,7 +44,7 @@ public class UserControllerTest {
     }
 
     @Test
-    public void testGetUserById() {
+     void testGetUserById() {
         // Arrange
         Integer userId = 1;
         User mockUser = new User(userId, "John", "john@example.com", "Male", "123456789");
@@ -60,7 +60,7 @@ public class UserControllerTest {
     }
 
     @Test
-    public void testSaveUser() {
+     void testSaveUser() {
         // Arrange
         User newUser = new User(null, "NewUser", "newuser@example.com", "Female", "987654321");
         User savedUser = new User(1, "NewUser", "newuser@example.com", "Female", "987654321");
