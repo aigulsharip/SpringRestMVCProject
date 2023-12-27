@@ -3,8 +3,7 @@ package com.example.springrestmvc.entity;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-public class UserTest {
+class UserTest {
 
     @Test
      void testUserInitialization() {
