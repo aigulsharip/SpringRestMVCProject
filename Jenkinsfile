@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
-                echo "Retriving the project from github"
+                echo "Retrieving the project from github"
                 git branch: 'master',
                     changelog: false,
                     poll: true,
@@ -45,6 +45,17 @@ pipeline {
                 }
             }
         }
+
+         stage('Quality Gate Check') {
+             steps {
+                script {
+                    def qualityGate = waitForQualityGate()
+                    if (qualityGate.status != 'OK') {
+                        error "Quality Gate did not pass. Deployment aborted."
+                    }
+                }
+             }
+         }
 
         stage('Deploy to Tomcat') {
             steps {
