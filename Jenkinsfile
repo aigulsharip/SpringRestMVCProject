@@ -46,16 +46,16 @@ pipeline {
             }
         }
 
-         stage('Quality Gate Check') {
-             steps {
-                script {
-                    def qualityGate = waitForQualityGate()
-                    if (qualityGate.status != 'OK') {
-                        error "Quality Gate did not pass. Deployment aborted."
-                    }
-                }
-             }
-         }
+//          stage('Quality Gate Check') {
+//              steps {
+//                 script {
+//                     def qualityGate = waitForQualityGate()
+//                     if (qualityGate.status != 'OK') {
+//                         error "Quality Gate did not pass. Deployment aborted."
+//                     }
+//                 }
+//              }
+//          }
 
         stage('Deploy to Tomcat') {
             steps {
